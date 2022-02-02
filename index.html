@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+
+    <title>Model Viewer</title>
+    <style>
+      model-viewer {
+        width: 500px;
+        height: 600px;
+        margin: 0 auto;
+      }
+      p {
+        font-family: "Courier New", monospace;
+        font-weight: bold;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p class="text-center" style="font-size: x-large">
+        List of some of the 3D psx models i made.
+      </p>
+      <br />
+      <model-viewer
+        src="assets/register.gltf"
+        camera-controls
+        auto-rotate
+      ></model-viewer>
+      <p class="text-center">Cash register</p>
+      <model-viewer
+        src="assets/shelf.gltf"
+        camera-controls
+        auto-rotate
+      ></model-viewer>
+      <p class="text-center">Shelf</p>
+      <model-viewer
+        src="assets/trash.gltf"
+        camera-controls
+        auto-rotate
+      ></model-viewer>
+      <p class="text-center">Trash can</p>
+      <model-viewer
+        src="assets/backpack.gltf"
+        camera-controls
+        auto-rotate
+      ></model-viewer>
+      <p class="text-center">Backpack</p>
+    </div>
+  </body>
+</html>
